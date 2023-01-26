@@ -58,7 +58,7 @@ class Database(object):
                  dbc_specifics: Optional[DbcSpecifics] = None,
                  autosar_specifics: Optional[AutosarDatabaseSpecifics] = None,
                  frame_id_mask: Optional[int] = None,
-                 strict: bool = True,
+                 strict: bool = False,
                  sort_signals: type_sort_signals = sort_signals_by_start_bit,
                  ) -> None:
         self._messages = messages or []
